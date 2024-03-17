@@ -18,3 +18,7 @@ My own keymap with some custom OLED features, Colemak base layer and gaming laye
     - Layer indicator
     - WPM counter
 
+## Useful Tools/Links:
+- [Erase eeprom via QMK/VIA](https://docs.keeb.io/reset-eeprom)
+- [QMK Logo Editor](https://joric.github.io/qle/)
+- [A guide to home row mods](https://precondition.github.io/home-row-mods#using-home-row-mods-with-qmk)
