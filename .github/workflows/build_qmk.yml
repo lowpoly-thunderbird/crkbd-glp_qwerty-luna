@@ -28,7 +28,7 @@ jobs:
         qmk compile -kb crkbd -km glp_qwerty_luna
 
     - name: Upload UF2 file
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: firmware.uf2
         path: .build/*.uf2
