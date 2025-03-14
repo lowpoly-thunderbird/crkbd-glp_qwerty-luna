@@ -23,6 +23,12 @@ jobs:
         python3 -m pip install qmk
         qmk setup -y
 
+    - name: Prepare keymap
+      run: |
+        mkdir -p keyboards/crkbd/keymaps/glp_qwerty_luna
+        cp keymap.c keyboards/crkbd/keymaps/glp_qwerty_luna/
+        echo "RGBLIGHT_ENABLE = yes" > keyboards/crkbd/keymaps/glp_qwerty_luna/rules.mk
+
     - name: Build firmware
       run: |
         qmk compile -kb crkbd -km glp_qwerty_luna
